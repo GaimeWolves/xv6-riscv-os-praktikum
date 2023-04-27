@@ -503,3 +503,15 @@ sys_pipe(void)
   }
   return 0;
 }
+
+uint64 sys_helloworld(void)
+{
+    const int MAX_GRP = 256;
+    char group[MAX_GRP];
+
+    argstr(0, group, MAX_GRP);
+
+    printf("Hello Kernel, Group %s!\n", (char *)group);
+
+    return 0;
+}

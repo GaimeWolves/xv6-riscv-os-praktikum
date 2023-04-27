@@ -5,5 +5,6 @@
 int main(int argc, char *argv[])
 {
     printf("Hello Userspace, Group %s!\n", argv[1]);
+    helloworld(argv[1]);
     return 0;
 }
